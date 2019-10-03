@@ -1,0 +1,30 @@
+.chip-button-pressed {
+    opacity: .7 !important;
+}
+
+.chip-button-hover-in {
+    border-width: 2px !important;
+}
+
+.chip-button-hover-out {
+
+}
+
+.chip-button {
+    width: 66px;
+    height: 26px;
+    background: #F8D9D7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 13px;
+    margin: 4px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+
+button:focus { outline: none; }
+
+.chip-button-label {
+    color: #B52026;
+    font-size: 14px;
+    padding-right: 4px;
+}
