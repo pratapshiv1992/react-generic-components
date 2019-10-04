@@ -1,18 +1,43 @@
 .chip-button {
-    width: 66px;
-    height: 26px;
     background: #F8D9D7 0% 0% no-repeat padding-box;
-    opacity: 1;
     border-radius: 13px;
-    margin: 4px;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
+    opacity: 1;
+    border: none;
 }
 
-button:focus { outline: none; }
+.chip-button-icon{
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+    fill: #B52026
+}
 
 .chip-button-label {
-    color: #B52026;
     font-size: 14px;
-    padding-right: 4px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    letter-spacing: 0;
+    color: #B52026;
 }
+
+.chip-button:disabled .chip-button-icon{
+    fill:  #FFFFFF;
+}
+
+.chip-button:disabled {
+    border: none !important;
+    background: #C0C0C0 0% 0% no-repeat padding-box;
+}
+
+.chip-button:disabled .chip-button-label {
+    color: #FFFFFF;
+}
+
+
+.chip-button:hover {
+    border: 1px solid #B52026;
+}
+
+.chip-button:active {
+    opacity: .7;
+    border: 1px solid #B52026B3;
+  }

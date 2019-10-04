@@ -5,7 +5,7 @@ import  AddIcon from './assets/AddIcon';
 function App(props) {
     return (
         <div>
-            <ChipButton label="Add" disabled={false} ><AddIcon /></ChipButton>
+            <ChipButton label="M tx" disabled={false} ><AddIcon /></ChipButton>
         </div>
     );
 }
