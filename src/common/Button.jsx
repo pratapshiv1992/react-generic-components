@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import '../styles/index.css';
 
-export const ChipButton = ({name, label, onClick, children}) => {
+export const ChipButton = ({name, label, onClick, children, disabled}) => {
     const [eventTransitionClass, setEventTransitionClass] = useState("chip-button-hover-out");
     return (
         <React.Fragment>
-            <button name={name} className={`chip-button ${eventTransitionClass}`} onClick={(e) => {
+            <button name={name} className={`chip-button ${eventTransitionClass}`} disabled={disabled} onClick={(e) => {
                 setEventTransitionClass("chip-button-pressed");
                 setTimeout(() => {
                     setEventTransitionClass("chip-button-hover-out");
