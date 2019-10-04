@@ -47,10 +47,10 @@ const ItemCardData = [{
 
 const Cart = (props) => {
     return (
-        <div>
-            <ChipButton label="Add" disabled={false} ><AddIcon /></ChipButton>
+        <div style={{width:"100%"}}>
+            {ItemCardData.map((data,key)=><ItemCard key={`${key}`} {...data} />)}
         </div>
     );
 }
 
-export default App;
+export default Cart;
