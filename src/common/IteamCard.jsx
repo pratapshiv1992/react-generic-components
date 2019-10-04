@@ -4,7 +4,7 @@ import  AddIcon from '../assets/AddIcon';
 
 const ItemCard = ({src, alt, height, width, description, title, link, linkText, price}) => {
     return (
-        <div style={{display: "inline-block", padding: "16px" }} >
+        <div style={{width: "33%", display: "inline-block", paddingBottom:"16px" }}>
             <div><img src={src} alt={alt} height={height} width={width}/></div>
             <h3>{title}</h3>
             <p>{description}</p>
