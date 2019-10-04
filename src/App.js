@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemCard from './common/IteamCard';
 import Aenean_Sm from './assets/Aenean_Sm.png';
+import './styles/index.css';
 
 const ItemCardData = [
     [{
@@ -54,10 +55,10 @@ const ItemCardData = [
 
 const Cart = (props) => {
     return (
-        <div style={{width: "100%"}}>{
+        <div  style={{maxWidth: "780px",paddingTop:123,paddingBottom:123,margin:"auto"}}>{
             ItemCardData.map((itemGroup) => {
                 const items = itemGroup.map((data, key) => <ItemCard key={`${key}`} {...data} />)
-                return <div style={{width: "100%"}}>{items}</div>
+                return <div>{items}</div>
             })}
         </div>
     );

@@ -40,4 +40,39 @@
 .chip-button:active {
     opacity: .7;
     border: 1px solid #B52026B3;
-  }
+}
+
+.item-card-link{
+    text-align: left;
+    font: Bold 12px 'Open Sans';
+    letter-spacing: 0;
+    color: #B52026;
+    text-decoration: none;
+}
+
+
+.item-card-link:hover {
+    text-decoration:underline;
+}
+
+
+.item-card-link:disabled {
+    color: #C0C0C0;
+}
+
+.item-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+}
+  
+img{
+    border-radius: 12px 12px 0px 0px;
+}
+.item-card:hover {
+    box-shadow: 0px 0px 30px #2114141A;
+}
+
+.padding-10{
+    padding: 10px !important;
+}
