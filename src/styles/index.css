@@ -1,3 +1,4 @@
+
 .chip-button {
     background: #F8D9D7 0% 0% no-repeat padding-box;
     border-radius: 13px;
@@ -123,3 +124,20 @@ button:focus {
     opacity: .7;
     border: 1px solid #B52026B3;
 }
+
+@media screen and (max-width: 800px) {
+ 
+    .cards{
+        padding-left:16%;
+    }    
+
+}
+
+@media screen and (max-width: 500px) {
+ 
+    .cards{
+        padding-left:11%;
+    }    
+
+}
+

@@ -4,7 +4,7 @@ import Vestibulum_Comm_Sm from '../assets/Vestibulum_Comm_Sm.png';
 
 
 const ItemCardData = [
-                      [{
+                      {
                           src: Vestibulum_Comm_Sm,
                           alt: "",
                           width: 240,
@@ -33,8 +33,8 @@ const ItemCardData = [
                           linkText: "Link",
                           price: "$6.99",
                           isStepper:true
-                      }],
-                      [{
+                      },
+                      {
                           src: Aenean_Sm,
                           alt: "",
                           width: 240,
@@ -52,7 +52,7 @@ const ItemCardData = [
                           link: "/",
                           linkText: "Link",
                           price: "$4.99"
-                      }]
+                      }
                   ];
 
 
