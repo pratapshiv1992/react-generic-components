@@ -8,6 +8,7 @@
 .chip-button-icon{
     background: transparent 0% 0% no-repeat padding-box;
     opacity: 0.7;
+    padding-left: 10px;
     fill: #B52026
 }
 
@@ -75,4 +76,8 @@ img{
 
 .padding-10{
     padding: 10px !important;
+}
+
+button:focus {
+    outline:0;
 }
