@@ -1,143 +1,132 @@
-
 .chip-button {
-    background: #F8D9D7 0% 0% no-repeat padding-box;
-    border-radius: 13px;
-    opacity: 1;
-    border: none;
+  background: #f8d9d7 0% 0% no-repeat padding-box;
+  border-radius: 13px;
+  opacity: 1;
+  border: none;
 }
 
-.chip-button-icon{
-    background: transparent 0% 0% no-repeat padding-box;
-    opacity: 0.7;
-    padding-left: 10px;
-    fill: #B52026
+.chip-button-icon {
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  padding-left: 10px;
+  fill: #b52026;
 }
 
 .chip-button-label {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Open Sans';
-    letter-spacing: 0;
-    color: #B52026;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  letter-spacing: 0;
+  color: #b52026;
 }
 
-.chip-button:disabled .chip-button-icon{
-    fill:  #FFFFFF;
+.chip-button:disabled .chip-button-icon {
+  fill: #ffffff;
 }
 
 .chip-button:disabled {
-    border: none !important;
-    background: #C0C0C0 0% 0% no-repeat padding-box;
+  border: none !important;
+  background: #c0c0c0 0% 0% no-repeat padding-box;
 }
 
 .chip-button:disabled .chip-button-label {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-
 .chip-button:hover {
-    border: 1px solid #B52026;
+  border: 1px solid #b52026;
 }
 
 .chip-button:active {
-    opacity: .7;
-    border: 1px solid #B52026B3;
+  opacity: 0.7;
+  border: 1px solid #b52026b3;
 }
 
-.item-card-link{
-    text-align: left;
-    font: Bold 12px 'Open Sans';
-    letter-spacing: 0;
-    color: #B52026;
-    text-decoration: none;
+.item-card-link {
+  text-align: left;
+  font: Bold 12px "Open Sans";
+  letter-spacing: 0;
+  color: #b52026;
+  text-decoration: none;
 }
-
 
 .item-card-link:hover {
-    text-decoration:underline;
+  text-decoration: underline;
 }
 
-
 .item-card-link:disabled {
-    color: #C0C0C0;
+  color: #c0c0c0;
 }
 
 .item-card {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 12px;
-    opacity: 1;
-}
-  
-img{
-    border-radius: 12px 12px 0px 0px;
-}
-.item-card:hover {
-    box-shadow: 0px 0px 30px #2114141A;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
 }
 
-.padding-10{
-    padding: 10px !important;
+img {
+  border-radius: 12px 12px 0px 0px;
+}
+.item-card:hover {
+  box-shadow: 0px 0px 30px #2114141a;
+}
+
+.padding-10 {
+  padding: 10px !important;
 }
 
 button:focus {
-    outline:0;
+  outline: 0;
 }
 
-
-.stepper-button{
-    background: #F8D9D7 0% 0% no-repeat padding-box;
-    opacity: 1;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    display: inline-block;
-    border: none;
-   }
-
+.stepper-button {
+  background: #f8d9d7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  border: none;
+}
 
 .stepper-button-label {
-    font-size: 14px;
-    font-family: 'Open Sans';
-    letter-spacing: 0;
-    color: #B52026;
+  font-size: 14px;
+  font-family: "Open Sans";
+  letter-spacing: 0;
+  color: #b52026;
 }
 
-.span{
-    padding: 6px;
-    font-weight:bold;
+.span {
+  padding: 6px;
+  font-weight: bold;
 }
 
 .stepper-button:disabled {
-    border: none !important;
-    opacity: .25;
+  border: none !important;
+  opacity: 0.25;
 }
 
 .stepper-button:disabled .stepper-button-label {
-   opacity: .25;
+  opacity: 0.25;
 }
 
 .stepper-button:hover {
-    border: 1px solid #B52026;
+  border: 1px solid #b52026;
 }
 
 .stepper-button:active {
-    opacity: .7;
-    border: 1px solid #B52026B3;
+  opacity: 0.7;
+  border: 1px solid #b52026b3;
 }
 
 @media screen and (max-width: 800px) {
- 
-    .cards{
-        padding-left:16%;
-    }    
-
+  .cards {
+    padding-left: 16%;
+  }
 }
 
 @media screen and (max-width: 500px) {
- 
-    .cards{
-        padding-left:11%;
-    }    
-
+  .cards {
+    padding-left: 11%;
+  }
 }
-

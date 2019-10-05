@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const SvgComponent = props => (
   <svg width={10} height={12} {...props}>
     <defs>
-      <style>{'.prefix__a{fill:#b52026}'}</style>
+      <style>{".prefix__a{fill:#b52026}"}</style>
     </defs>
     <path
       className="prefix__a"
@@ -14,6 +14,6 @@ const SvgComponent = props => (
       d="M3.199 10.514a.326.326 0 00.326-.326V6.521a.326.326 0 10-.652 0v3.67a.326.326 0 00.326.323zM5 10.514a.326.326 0 00.326-.326V6.521a.326.326 0 10-.652 0v3.67a.326.326 0 00.326.323zM6.8 10.514a.326.326 0 00.326-.326V6.521a.326.326 0 10-.652 0v3.67a.326.326 0 00.326.323z"
     />
   </svg>
-)
+);
 
-export default SvgComponent
+export default SvgComponent;
