@@ -1,4 +1,5 @@
 import React from 'react';
+import DeleteIcon from '../assets/DeleteIcon';
 import '../styles/index.css';
 
 export const ChipButton = ({name, value, label, icon, onClick, children, disabled, onMouseOver, onMouseOut}) => {
@@ -10,5 +11,16 @@ export const ChipButton = ({name, value, label, icon, onClick, children, disable
             {children}
             {icon}
         </button>
+    );
+}
+
+export const Stepper = ({name, value=1, label, icon, onClick, children, disabled, onMouseOver, onMouseOut}) => {
+    return (
+        <span style={{float: "right"}} >
+        {value ===1 && <DeleteIcon />}
+        {value > 1 && <span>-</span> }
+        <span style={{padding: "8px"}} >{value}</span>
+        <span>+</span>
+        </span>
     );
 }

@@ -11,7 +11,8 @@ const ItemCardData = [
                           description: "Mauris imperdiet orci dapibus commodo libero nec, interib",
                           link: "/",
                           linkText: "Link",
-                          price: "$8.99"
+                          price: "$8.99",
+                          isStepper:true
                       }, {
                           src: Aenean_Sm,
                           alt: "",
@@ -29,7 +30,8 @@ const ItemCardData = [
                           title: "Aenean Sed Nibh A Magna Posuere",
                           link: "/",
                           linkText: "Link",
-                          price: "$6.99"
+                          price: "$6.99",
+                          isStepper:true
                       }],
                       [{
                           src: Aenean_Sm,
