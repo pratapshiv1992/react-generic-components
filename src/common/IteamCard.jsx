@@ -9,7 +9,7 @@ const ItemCard = ({src, alt, height, width, description, title, link, linkText, 
             <div style={{padding:10}}>
             <h3>{title}</h3>
             <p>{description}</p>
-            <div><a className="item-card-link" href={link}>{linkText}</a></div>
+            <div><a className="item-card-link" href={link}>{linkText} <span>></span></a></div>
             <div>
                 <span style={{fontWeight:"bolder"}}>{price}</span>
                 {isStepper ? <Stepper /> :

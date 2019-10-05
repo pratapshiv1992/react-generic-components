@@ -81,3 +81,45 @@ img{
 button:focus {
     outline:0;
 }
+
+
+.stepper-button{
+    background: #F8D9D7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+   }
+
+
+.stepper-button-label {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    letter-spacing: 0;
+    color: #B52026;
+}
+
+.span{
+    padding: 6px;
+    font-weight:bold;
+}
+
+.stepper-button:disabled {
+    border: none !important;
+    opacity: .25;
+}
+
+.stepper-button:disabled .stepper-button-label {
+   opacity: .25;
+}
+
+.stepper-button:hover {
+    border: 1px solid #B52026;
+}
+
+.stepper-button:active {
+    opacity: .7;
+    border: 1px solid #B52026B3;
+}

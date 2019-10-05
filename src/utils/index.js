@@ -5,10 +5,11 @@ import Vestibulum_Comm_Sm from '../assets/Vestibulum_Comm_Sm.png';
 
 const ItemCardData = [
                       [{
-                          src: Vestibulum_Sm,
+                          src: Vestibulum_Comm_Sm,
                           alt: "",
                           width: 240,
                           description: "Mauris imperdiet orci dapibus commodo libero nec, interib",
+                          title: "Aenean Sed Nibh A Magna Posuere",
                           link: "/",
                           linkText: "Link",
                           price: "$8.99",

@@ -17,10 +17,16 @@ export const ChipButton = ({name, value, label, icon, onClick, children, disable
 export const Stepper = ({name, value=1, label, icon, onClick, children, disabled, onMouseOver, onMouseOut}) => {
     return (
         <span style={{float: "right"}} >
-        {value ===1 && <DeleteIcon />}
-        {value > 1 && <span>-</span> }
-        <span style={{padding: "8px"}} >{value}</span>
-        <span>+</span>
+            <button className="stepper-button">
+                <span className="stepper-button-label">
+                    {value ===1 && <DeleteIcon />}
+                    {value > 1 && <span>-</span> }
+                </span>
+            </button>
+            <span className="span" >{value}</span>
+            <button className="stepper-button">
+                <span className="stepper-button-label"> + </span>
+            </button>
         </span>
     );
 }
