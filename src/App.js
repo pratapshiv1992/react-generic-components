@@ -17,7 +17,7 @@ const Cart = props => {
       }}
     >
       {ItemCardData.map((data, key) => (
-        <ItemCard key={`${key}`} {...data} />
+        <ItemCard key={`${key}`} {...data}  width={240} link="/" linkText="Link" alt="" />
       ))}
     </div>
   );

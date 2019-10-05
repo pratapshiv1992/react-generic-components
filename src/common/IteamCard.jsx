@@ -3,6 +3,7 @@ import { ChipButton, Stepper } from "./Button";
 import AddIcon from "../assets/AddIcon";
 
 const ItemCard = ({
+  id,
   src,
   alt,
   height,
@@ -34,9 +35,9 @@ const ItemCard = ({
         <div>
           <span style={{ fontWeight: "bolder" }}>{price}</span>
           {isStepper ? (
-            <Stepper />
+            <Stepper name={id} />
           ) : (
-            <ChipButton label="Add" disabled={false} icon={<AddIcon />} />
+            <ChipButton name={id} label="Add" disabled={false} icon={<AddIcon />} />
           )}
         </div>
       </div>
