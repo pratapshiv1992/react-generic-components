@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useReducer} from "react";
 import ItemCard from "./common/IteamCard";
-import { callApi } from "./utils";
+import { callApi,cartReducer as reducer} from "./utils";
 import "./styles/index.css";
 
 const Cart = props => {
+  const [state, dispatch] = useReducer(reducer, {});
   const ItemCardData = callApi();
+  console.log("Cart component state: ", state);
 
   return (
     <div
@@ -17,7 +19,7 @@ const Cart = props => {
       }}
     >
       {ItemCardData.map((data, key) => (
-        <ItemCard key={`${key}`} {...data}  width={240} link="/" linkText="Link" alt="" />
+        <ItemCard key={`${key}`} {...data} value={state[data.id]} dispatch={dispatch} width={240} link="/" linkText="Link" alt="" />
       ))}
     </div>
   );

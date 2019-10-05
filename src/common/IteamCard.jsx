@@ -14,7 +14,9 @@ const ItemCard = ({
   linkText,
   price,
   icon,
-  isStepper
+  isStepper,
+  dispatch,
+  value
 }) => {
   return (
     <div
@@ -31,13 +33,14 @@ const ItemCard = ({
           <a className="item-card-link" href={link}>
             {linkText} <span>></span>
           </a>
+          {!isStepper && <span style={{ fontWeight: "bolder", paddingLeft:"8px" }}>{value}</span>}
         </div>
         <div>
           <span style={{ fontWeight: "bolder" }}>{price}</span>
           {isStepper ? (
-            <Stepper name={id} />
+            <Stepper value={value} name={id} id={id} dispatch={dispatch} />
           ) : (
-            <ChipButton name={id} label="Add" disabled={false} icon={<AddIcon />} />
+            <ChipButton value={value} name={id} id={id} label="Add" disabled={false} dispatch={dispatch} icon={<AddIcon />} />
           )}
         </div>
       </div>

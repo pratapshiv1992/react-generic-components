@@ -4,6 +4,7 @@ import "../styles/index.css";
 
 export const ChipButton = ({
   name,
+  id,
   value,
   label,
   icon,
@@ -11,7 +12,8 @@ export const ChipButton = ({
   children,
   disabled,
   onMouseOver,
-  onMouseOut
+  onMouseOut,
+  dispatch
 }) => {
   return (
     <button
@@ -20,7 +22,7 @@ export const ChipButton = ({
       name={name}
       className="chip-button"
       disabled={disabled}
-      onClick={onClick}
+      onClick={(e)=>dispatch({type:"increment",payload:{id}})}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
     >
@@ -34,24 +36,32 @@ export const ChipButton = ({
 export const Stepper = ({
   name,
   value = 1,
+  id,
   label,
   icon,
   onClick,
   children,
   disabled,
   onMouseOver,
-  onMouseOut
+  onMouseOut,
+  dispatch
 }) => {
   return (
     <span style={{ float: "right" }}>
-      <button className="stepper-button">
+      <button 
+        className="stepper-button"
+        onClick={(e)=>dispatch({type:"decrement",payload:{id}})} 
+      >
         <span className="stepper-button-label">
           {value === 1 && <DeleteIcon />}
           {value > 1 && <span>-</span>}
         </span>
       </button>
       <span className="span">{value}</span>
-      <button className="stepper-button">
+      <button 
+       className="stepper-button"
+       onClick={(e)=>dispatch({type:"increment",payload:{id}})} 
+      >
         <span className="stepper-button-label"> + </span>
       </button>
     </span>
