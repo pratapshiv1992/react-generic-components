@@ -33,8 +33,8 @@ const ItemCard = ({
         />
       </div>
       <div style={{ padding: 10 }}>
-        <label className="heading">{title}</label>
-        <p className="desc">{description}</p>
+        <p className="heading text-overflow ">{title}</p>
+        <p className="desc text-overflow ">{description}</p>
         <div>
           <a className="item-card-link" href={link}>
             {linkText} <span>></span>
