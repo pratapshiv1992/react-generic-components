@@ -7,8 +7,7 @@ const ItemCardData = [
     src: Vestibulum_Sm,
     description: "Mauris imperdiet orci dapibus commodo libero nec, interib",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "8.99",
-    isStepper: true
+    price: "8.99"
   },
   {
     id:"2nd_Item_Id",  
@@ -22,8 +21,7 @@ const ItemCardData = [
     src: Vestibulum_Comm_Sm,
     description: "Mauris imperdiest orci dapibus commodo libero nec, interib",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "6.99",
-    isStepper: true
+    price: "6.99"
   },
   {
     id:"4th_Item_Id",  

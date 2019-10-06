@@ -14,7 +14,6 @@ const ItemCard = ({
   linkText,
   price,
   icon,
-  isStepper,
   dispatch,
   value
 }) => {
@@ -39,16 +38,11 @@ const ItemCard = ({
           <a className="item-card-link" href={link}>
             {linkText} <span>></span>
           </a>
-          {!isStepper && (
-            <span style={{ fontWeight: "bolder", paddingLeft: "8px" }}>
-              {value}
-            </span>
-          )}
         </div>
         <div className="padtop-10">
           <span className="bolder">$</span>
           <label className="heading">{price}</label>
-          {isStepper ? (
+          {value ? (
             <Stepper value={value} name={id} id={id} dispatch={dispatch} />
           ) : (
             <ChipButton
