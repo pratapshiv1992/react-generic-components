@@ -45,7 +45,7 @@ const ItemCard = ({
             </span>
           )}
         </div>
-        <div className="padleft-10">
+        <div className="padtop-10">
           <span className="bolder">$</span>
           <label className="heading">{price}</label>
           {isStepper ? (
