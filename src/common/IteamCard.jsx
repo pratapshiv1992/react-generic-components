@@ -25,7 +25,7 @@ const ItemCard = ({
     >
       <div className="container">
         <img
-          className="container-img"
+          className="container-img portrait-img"
           src={src}
           alt={alt}
           height={height}

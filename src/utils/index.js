@@ -1,6 +1,6 @@
-import Aenean_Sm from "../assets/Aenean_Lg.png";
-import Vestibulum_Comm_Sm from "../assets/Vestibulum_Comm_Md.png";
-import Vestibulum_Sm from "../assets/Vestibulum_Md.png";
+import Aenean_Sm from "../assets/Aenean_Sm.png";
+import Vestibulum_Comm_Sm from "../assets/Vestibulum_Comm_Sm.png";
+import Vestibulum_Sm from "../assets/Vestibulum_Sm.png";
 const ItemCardData = [
   {
     id:"1st_Item_Id",  
