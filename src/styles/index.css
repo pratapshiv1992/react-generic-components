@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans';
+}
+
 .chip-button {
   background: #f8d9d7 0% 0% no-repeat padding-box;
   border-radius: 13px;
@@ -5,10 +9,9 @@
   border: none;
 }
 
-.chip-button-icon {
+.add-button-icon {
   background: transparent 0% 0% no-repeat padding-box;
   opacity: 0.7;
-  padding-left: 10px;
   fill: #b52026;
 }
 
@@ -20,7 +23,7 @@
   color: #b52026;
 }
 
-.chip-button:disabled .chip-button-icon {
+.chip-button:disabled .add-button-icon {
   fill: #ffffff;
 }
 
@@ -74,6 +77,7 @@ img {
 .padding-10 {
   padding: 10px !important;
 }
+
 
 button:focus {
   outline: 0;
@@ -129,4 +133,52 @@ button:focus {
   .cards {
     padding-left: 11%;
   }
+}
+
+
+.heading{
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0;
+  color: #202020;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #202020;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.desc{
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.container {
+  background-color: #b52026;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+.container-img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+}
+
+.padleft-10{
+  padding-left: 10px;
+}
+
+.padtop-10{
+  padding-top: 10px;
+}
+
+.bolder{
+  font-weight: bolder;
 }

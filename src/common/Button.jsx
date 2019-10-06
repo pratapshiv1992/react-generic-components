@@ -1,5 +1,6 @@
 import React from "react";
 import DeleteIcon from "../assets/DeleteIcon";
+import AddIcon from "../assets/AddIcon";
 import "../styles/index.css";
 
 export const ChipButton = ({
@@ -28,7 +29,7 @@ export const ChipButton = ({
     >
       <span className="chip-button-label">{label}</span>
       {children}
-      {icon}
+      <span style={{paddingLeft:"10px"}}>{icon}</span>
     </button>
   );
 };
@@ -62,7 +63,7 @@ export const Stepper = ({
        className="stepper-button"
        onClick={(e)=>dispatch({type:"increment",payload:{id}})} 
       >
-        <span className="stepper-button-label"> + </span>
+        <span className="stepper-button-label"> <AddIcon /> </span>
       </button>
     </span>
   );

@@ -1,13 +1,13 @@
-import Aenean_Sm from "../assets/Aenean_Sm.png";
-import Vestibulum_Comm_Sm from "../assets/Vestibulum_Comm_Sm.png";
-
+import Aenean_Sm from "../assets/Aenean_Lg.png";
+import Vestibulum_Comm_Sm from "../assets/Vestibulum_Comm_Md.png";
+import Vestibulum_Sm from "../assets/Vestibulum_Md.png";
 const ItemCardData = [
   {
     id:"1st_Item_Id",  
-    src: Vestibulum_Comm_Sm,
+    src: Vestibulum_Sm,
     description: "Mauris imperdiet orci dapibus commodo libero nec, interib",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "$8.99",
+    price: "8.99",
     isStepper: true
   },
   {
@@ -15,14 +15,14 @@ const ItemCardData = [
     src: Aenean_Sm,
     description: " Duis rhoncus dui venenatis consequat porttitor",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "$4.99"
+    price: "4.99"
   },
   {
     id:"3rd_Item_Id",  
     src: Vestibulum_Comm_Sm,
     description: "Mauris imperdiest orci dapibus commodo libero nec, interib",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "$6.99",
+    price: "6.99",
     isStepper: true
   },
   {
@@ -30,14 +30,14 @@ const ItemCardData = [
     src: Aenean_Sm,
     description: " Duis rhoncus dui venenatis consequat porttitor",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "$8.99"
+    price: "8.99"
   },
   {
     id:"5th_Item_Id",  
     src: Aenean_Sm,
     description:"Pizza cheese burst garlic bread Mauris imperdiet orci dapibus",
     title: "Aenean Sed Nibh A Magna Posuere",
-    price: "$4.99"
+    price: "4.99"
   }
 ];
 
