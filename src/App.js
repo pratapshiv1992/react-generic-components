@@ -18,7 +18,7 @@ const Cart = props =>  {
         margin: "auto"
       }}
     >
-    <h1 style={{color: "#fc033d"}}>Total item in cart : {getTotalCountOfItems(state)}</h1>
+    <h1>Total item in cart : {getTotalCountOfItems(state)}</h1>
       {ItemCardData.map((data, key) => (
         <ItemCard key={`${key}`} {...data} value={state[data.id]} dispatch={dispatch} width={240} link="/" linkText="Link" alt="" />
       ))}
