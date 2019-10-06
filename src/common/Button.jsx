@@ -36,7 +36,7 @@ export const ChipButton = ({
 
 export const Stepper = ({
   name,
-  value = 1,
+  value,
   id,
   label,
   icon,
@@ -49,16 +49,16 @@ export const Stepper = ({
 }) => {
   return (
     <span style={{ float: "right" }}>
-      <button 
+    {value && <button 
         className="stepper-button"
         onClick={(e)=>dispatch({type:"decrement",payload:{id}})} 
       >
-        <span className="stepper-button-label">
+      <span className="stepper-button-label">
           {value === 1 && <DeleteIcon />}
           {value > 1 && <span>-</span>}
-        </span>
-      </button>
-      <span className="span">{value}</span>
+      </span>
+      </button>}
+      {value && <span className="span">{value}</span>}
       <button 
        className="stepper-button"
        onClick={(e)=>dispatch({type:"increment",payload:{id}})} 

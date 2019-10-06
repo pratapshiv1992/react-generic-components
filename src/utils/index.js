@@ -14,7 +14,7 @@ const ItemCardData = [
     id:"2nd_Item_Id",  
     src: Aenean_Sm,
     description: " Duis rhoncus dui venenatis consequat porttitor",
-    title: "Aenean Sed Nibh A Magna Posuere dskj kjdsdskj ",
+    title: "Aenean Sed Nibh A Magna Posuere Aenean Sed Nibh A ",
     price: "4.99"
   },
   {
@@ -60,3 +60,11 @@ export const cartReducer = (state, action)=>{
       throw new Error();
   }
 }
+
+export const getTotalCountOfItems =(items)=>{
+  let totalCount = 0;
+  for(let key in items){
+    totalCount += items[key];
+  }
+  return totalCount
+  }
