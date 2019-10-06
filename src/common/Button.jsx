@@ -1,6 +1,8 @@
 import React from "react";
 import DeleteIcon from "../assets/DeleteIcon";
 import AddIcon from "../assets/AddIcon";
+import { FaMinus } from 'react-icons/fa';
+ 
 import "../styles/index.css";
 
 export const ChipButton = ({
@@ -55,7 +57,7 @@ export const Stepper = ({
       >
       <span className="stepper-button-label">
           {value === 1 && <DeleteIcon />}
-          {value > 1 && <span>-</span>}
+          {value > 1 && <FaMinus />}
       </span>
       </button>}
       {value && <span className="span">{value}</span>}
